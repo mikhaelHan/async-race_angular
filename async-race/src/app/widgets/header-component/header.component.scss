@@ -1,0 +1,54 @@
+.header {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 1280px;
+  min-width: 360px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fbbf24;
+
+  &__title {
+    margin: 0 !important;
+    font-size: 1.875rem;
+    line-height: 1;
+    font-style: italic;
+    text-decoration: underline;
+
+    @media (min-width: 640px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.25rem;
+
+    @media (min-width: 640px) {
+      gap: 1rem;
+    }
+  }
+
+  &__button {
+    background-color: #64748b;
+    margin-top: 0.625rem;
+
+    @media (min-width: 640px) {
+      margin-top: 0;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 0.25rem;
+    font-size: 1.875rem;
+    width: 2rem !important;
+    height: 2rem !important;
+
+    @media (min-width: 640px) {
+      margin-bottom: 0;
+      font-size: 2.25rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.layout {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #0f172a;
+}
+
+.header,
+.footer {
+  width: auto;
+  background-color: #64748b;
+  height: 3rem;
+
+  @media (min-width: 640px) {
+    height: 4rem;
+  }
+}
+
+.main {
+  width: auto;
+  background-color: #0f172a;
+  height: calc(100vh - 6rem);
+
+  @media (min-width: 640px) {
+    height: calc(100vh - 8rem);
+  }
+}
