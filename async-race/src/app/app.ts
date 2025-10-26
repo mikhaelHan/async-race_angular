@@ -8,7 +8,8 @@ import { RouterOutlet } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, MatSlideToggleModule],
   template: `
-  <mat-slide-toggle>Toggle me!</mat-slide-toggle>
-  <router-outlet />`,
+    <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+    <router-outlet />
+  `,
 })
 export class App {}

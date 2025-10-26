@@ -14,11 +14,14 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve",
-     /* Absolute imports */
+    /* Absolute imports */
     "moduleResolution": "bundler",
     "paths": {
       "@app/*": ["./src/*"]
-    }
+    },
+    /* Import json */
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
