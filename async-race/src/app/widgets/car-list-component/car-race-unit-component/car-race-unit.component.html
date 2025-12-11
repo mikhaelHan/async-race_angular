@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="header">
+    <button mat-stroked-button>SELECT</button>
+    <button mat-stroked-button>REMOVE</button>
+    <h3>{{ title() }}</h3>
+  </div>
+
+  <div class="controls">
+    <div class="controls__action-buttons">
+      <button mat-mini-fab aria-label="Start">
+        <mat-icon>forward</mat-icon>
+      </button>
+      <button mat-mini-fab aria-label="Stop">
+        <mat-icon>stop</mat-icon>
+      </button>
+    </div>
+
+    <div class="controls__track">
+      <app-car-svg-component [color]="color()" />
+      <img alt="end" src="end.png" />
+    </div>
+  </div>
+</div>

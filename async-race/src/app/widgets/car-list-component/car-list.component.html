@@ -1,1 +1,7 @@
-<p>car-list.component works!</p>
+<ul class="list">
+  @for (item of garageStore.cars(); track item.id) {
+    <li class="list__item">
+      <app-car-race-unit-component [color]="item.color" [title]="item.name" />
+    </li>
+  }
+</ul>
